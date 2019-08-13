@@ -14,7 +14,6 @@ class Application(tk.Frame):
         self.hi_there.pack(side="top")
 
         self.canvas = tk.Canvas(self)
-        self.canvas[]
 
         self.quit = tk.Button(self, text="QUIT", fg="red",
                               command=self.master.destroy)
@@ -24,5 +23,6 @@ class Application(tk.Frame):
         print("hi there, everyone!")
 
 root = tk.Tk()
+root.geometry("500x500")
 app = Application(master=root)
 app.mainloop()
