@@ -1,5 +1,6 @@
 #For loop
 words = ['cat', 'window', 'defenestrate']
+arrtp = [('a',1),('b',2),('c',3)]
 for w in words:
     print(w, len(w))
 
@@ -36,3 +37,10 @@ for num in range(2, 10):
         print("Found an even number", num)
         continue
     print("Found a number", num)
+
+
+for i, x in enumerate(words):
+    print(x)
+
+for x,y in arrtp:
+    print(y)
