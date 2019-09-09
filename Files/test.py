@@ -1,1 +1,3 @@
-print(ord("a"))
+import sys
+
+print(sys.argv)
