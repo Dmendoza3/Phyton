@@ -2,7 +2,7 @@ import sys
 
 inF = sys.argv[1]
 outF = sys.argv[2] if len(sys.argv) > 2 else "counted.csv"
-#sep = sys.argv[3] if 
+sep = " "#sys.argv[3] if 
 
 inFile = open(inF, "r")
 outFile = open(outF, "w")
@@ -19,9 +19,9 @@ while(line):
         flag = False
 
     line = inFile.readline()
-    lineArr = line.strip().split(";")
+    lineArr = line.strip().split(sep)
     for word in lineArr:
-        if wordCount.get(word,False) != False:
+        if wordCount.get(word.lower(), -1) != -1:
             wordCount[word.lower()] =  wordCount[word.lower()] + 1
         else:
             wordCount[word.lower()] = 1
