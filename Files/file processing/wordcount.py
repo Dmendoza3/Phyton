@@ -19,7 +19,8 @@ while(line):
         flag = False
 
     line = inFile.readline()
-    lineArr = line.strip().split(sep)
+    #lineArr = line.strip().split(sep)
+    lineArr = line.split()
     for word in lineArr:
         if wordCount.get(word.lower(), -1) != -1:
             wordCount[word.lower()] =  wordCount[word.lower()] + 1

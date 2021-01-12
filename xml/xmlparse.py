@@ -11,7 +11,7 @@ def profPrint(parent, x = 0):
         profPrint(child, x + 1)
 
 outF = "./rawtext.txt"
-outFile = open(outF, "w")
+outFile = open(outF, "w", encoding="utf-8")
 
 tree = ET.parse('1000000.xml')
 root = tree.getroot()

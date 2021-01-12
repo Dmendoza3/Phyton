@@ -1,0 +1,3 @@
+Add conectors (The blocks used for communication between automata)
+Add order of interaction
+Add request and accept of interaction

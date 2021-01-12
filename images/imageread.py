@@ -11,7 +11,7 @@ for w in range(0, im.size[0]):
         avgcol = int(sum(pix[w,h]) / 3)
         pix[w,h] = (avgcol, avgcol, avgcol)
 
-im.save('bwparrot.jpg')
+im.save('bwparrot.png')
 
 for w in range(0, im.size[0]):
     for h in range(0, im.size[1]):
@@ -44,8 +44,8 @@ for w in range(0, im.size[0]):
         else:
             pix[w,h] = (255, 255, 255)
 
-for w in range(0, im.size[0]):
-    for h in range(0, im.size[1]):
-        if pix[w + 1, h] 
+##for w in range(0, im.size[0]):
+##    for h in range(0, im.size[1]):
+##        if pix[w + 1, h] 
 #im.show()
-im.save('hcparrot.jpg')
+im.save('hcparrot.png')

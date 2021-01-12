@@ -1,10 +1,6 @@
 def remove(line):
-    notWanted = ["is", "the", "and", "of", "to", "a", "or", "for", "in", "at", "than", "my", 
-    "you", "me", "an", "but", "do", "fuck", "shit", "that", "he", "she", "i", "ah", "oh", "no", "yes",
-    "ok", "so", "us", "am", "ass", "be", "bro", "does", "did", "dr", "etc", "go", "jpg", "too", "it", 
-    "gg", "gt", "if", "its", "her", "aren t", "isn t", "this", "sir", "on", "not", "him", "don", "doesn",
-    "www", "com", "http", "one", "re", "can", "has", "r", "lw", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0",
-    "f", "porn", "by", "off", "s", "t", "\t", "source", "fb"]
+    notWanted = ["is", "the", "and", "of", "to", "a", "or", "for", "in", "at", "than", "an", "but", "do", "ah", "oh"
+    "so", "if", "its", "her", "aren't", "isn't"]
 
     line = " " + line
     for word in notWanted:
@@ -13,7 +9,7 @@ def remove(line):
 
     return line[1:]
 
-inPath = './ReducedFile.txt'
+inPath = './randomtext.txt'
 outPath = './removedWords.txt'
 
 inFile = open(inPath, 'r')

@@ -1,3 +1,8 @@
+#Unit types: carnivore, herbivore, plant
+#Unit actions: search for food, eat, sleep, reproduce
+#Unit stats: Hunger(0-100), Sleep(0-100), Survivavility(based of population)
+#Reduce stats by step, Reproduce world by step
+
 class unit:
     def __init__(self, name = "nameless"):
         self.name = name
@@ -37,4 +42,6 @@ env.table[1].x = 2.5
 env.table[1].y = 2.5
 env.table[2].x = 3.5
 env.table[2].y = 3.5
+
+
 
